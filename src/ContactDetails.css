@@ -1,9 +1,11 @@
 .ContactDetails {
   display: flex;
   flex-direction: column;
+  margin: 1em;
+  text-align: left;
 }
 
-.ContactDetails div label {
+.ContactDetails label {
   display: block;
   font-weight: 600;
 }

@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Contact from './Contact';
+import './ContactList.css';
 
 class ContactList extends Component {
-  // constructor(props) {
-  //   super(props);
-  //
-  // }
-
   render() {
     return (
-      <div>
+      <div className="ContactList">
+        <label>List of Contacts</label>
         { this.props.contacts.map((contact) => {
           return (<Contact key={contact.id} contact={contact} handleShowDetails={this.props.handleShowDetails}/>)
         })}

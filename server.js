@@ -7,8 +7,8 @@ app.get('/api/contacts', (req, res) => {
   res.send([
     {
       "id": 0,
-      "firstName": "My",
-      "lastName": "Name",
+      "firstName": "John",
+      "lastName": "Smith",
       "phones": [
         {
           "type": "home",
@@ -44,8 +44,8 @@ app.get('/api/contacts', (req, res) => {
     },
     {
       "id": 1,
-      "firstName": "My",
-      "lastName": "Son",
+      "firstName": "Mary",
+      "lastName": "Smith",
       "phones": [
         {
           "type": "home",

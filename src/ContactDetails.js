@@ -11,6 +11,7 @@ class ContactDetails extends Component {
     return (
       <div className="ContactDetails">
         <div className="selector" onClick={this.props.handleShowList}>&laquo; back</div>
+        <label>Contact</label>
 
         <div className="Section">
           <label>Name</label>

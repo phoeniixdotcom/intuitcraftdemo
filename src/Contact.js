@@ -18,7 +18,6 @@ class Contact extends Component {
       <div className="contact" onClick={this.handleShowDetailsWithId}>
         <span>{this.props.contact.firstName}</span>
         <span>{this.props.contact.lastName}</span>
-        <span>{this.props.contact.phones[2].number}</span>
       </div>
     );
   }
