@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './Common.css';
+import './ContactDetails.css'
 
 class ContactDetails extends Component {
 
@@ -8,13 +9,16 @@ class ContactDetails extends Component {
     const contact = this.props.contact;
 
     return (
-      <div>
+      <div className="ContactDetails">
         <div className="selector" onClick={this.props.handleShowList}>&laquo; back</div>
-        <div>{contact.firstName}</div>
-        <div>{contact.lastName}</div>
 
-        <div>
-          <p>Phones</p>
+        <div className="Section">
+          <label>Name</label>
+          <div>{contact.firstName} {contact.lastName}</div>
+        </div>
+
+        <div className="Section">
+          <label>Phones</label>
           {contact.phones.map((phone) => {
             return phone.number !== ''
             ? (<div>{phone.number} {phone.type}</div>)
@@ -22,8 +26,8 @@ class ContactDetails extends Component {
           })}
         </div>
 
-        <div>
-          <p>Addresses</p>
+        <div className="Section">
+          <label>Addresses</label>
           {contact.addresses.map((address) => {
             return (
               <div>

@@ -1,0 +1,18 @@
+.ContactDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.ContactDetails div label {
+  display: block;
+  font-weight: 600;
+}
+
+.ContactDetails div div {
+  /*margin: 0 2em;*/
+}
+
+.ContactDetails div.Section {
+  margin: 1em 0;
+  text-align: left;
+}

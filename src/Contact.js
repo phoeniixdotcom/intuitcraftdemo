@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './Common.css';
+import './Contact.css';
 
 class Contact extends Component {
   constructor(props) {
@@ -15,7 +15,11 @@ class Contact extends Component {
 
   render() {
     return (
-      <div className="selector" onClick={this.handleShowDetailsWithId}>{this.props.contact.firstName} {this.props.contact.lastName} {this.props.contact.phones[2].number}</div>
+      <div className="contact" onClick={this.handleShowDetailsWithId}>
+        <span>{this.props.contact.firstName}</span>
+        <span>{this.props.contact.lastName}</span>
+        <span>{this.props.contact.phones[2].number}</span>
+      </div>
     );
   }
 };
